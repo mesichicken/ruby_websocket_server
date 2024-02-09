@@ -1,4 +1,3 @@
-
 require 'socket'
 require 'digest/sha1'
 
@@ -65,7 +64,6 @@ loop do
   STDERR.puts "Unmasked the data: #{ unmasked_data.inspect }"
 
   STDERR.puts "Converted to a string: #{ unmasked_data.pack('C*').force_encoding('utf-8').inspect }"
-
 
   response = "Loud and clear!"
   STDERR.puts "Sending response: #{ response.inspect }"
